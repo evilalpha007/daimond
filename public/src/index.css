@@ -75,6 +75,11 @@ code {
   border-color: linear-gradient(90deg, #ffc700, #ffea21), #ff9e2c;
   padding: 0;
 }
+
+.pulsebanner {
+  display: none;
+}
+
 .btn__icon {
   display: flex;
   justify-content: center;
@@ -371,6 +376,7 @@ body{
     font-size: 12px;
   }
   .pulsebanner {
+    display: none;
     overflow:scroll;
     white-space: nowrap;
     position: absolute;

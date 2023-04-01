@@ -20,6 +20,7 @@ import BetHistory from "./../components/protectedComponents/BetHistory";
 import ChangeButtonVlaue from "./../components/protectedComponents/ChangeButtonVlaue";
 import PrivateChangePassword from "./../components/protectedComponents/PrivateChangePassword";
 import ParentEventMatch from "../components/protectedComponents/gameList/ParentEventMatch";
+import PrivateBasketBallScreen from "../screens/privateScreens/PrivateBasketBallScreen";
 
 export default function PrivateRoutes() {
   const { login } = useSelector((state) => state?.auth);
@@ -33,6 +34,7 @@ export default function PrivateRoutes() {
       component: <ParentEventMatch />,
     },
     { path: "/game-list/cricket", component: <PrivateCricketScreen /> },
+    { path: "/game-list/basket-ball", component: <PrivateBasketBallScreen /> },
     { path: "/game-list/casino", component: <PrivateCasinoScreen /> },
     { path: "/game-list/soccer", component: <PrivateSoccerScreen /> },
     {

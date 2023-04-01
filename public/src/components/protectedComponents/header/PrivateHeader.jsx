@@ -13,12 +13,13 @@ export default function PrivateHeader() {
     { title: "CRICKET", to: "/game-list/cricket" },
     { title: "FOOTBALL", to: "/game-list/soccer" },
     { title: "TENNIS", to: "/game-list/tennis" },
-    { title: "ICE HOCKEY", to: "/game-list/horse-racing" },
-    { title: "BASKET BALL ", to: "/game-list/grey-hound-racing" },
+    { title: "HORSE RACING ", to: "/game-list/horse-racing" },
+    { title: "GREY HOUND RACING ", to: "/game-list/grey-hound-racing" },
     { title: "ANDHAR BHAR", to: "/game-list/kabddi" },
     { title: "LIVE POKER ", to: "/game-list/politics" },
     { title: "LUCKY 7", to: "/game-list/casino" },
     { title: "INT.CASINO", to: "/game-list/int-casino" },
+    { title: "BASKETBALL", to: "/game-list/basket-ball" },
   ];
 
   function Dropdown({ title, items, ml }) {

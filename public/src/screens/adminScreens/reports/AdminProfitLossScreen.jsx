@@ -4,7 +4,7 @@ export default function AdminProfitLossScreen() {
   return (
     <div className="AdminProfitLossScreen p-5">
       <div className="profit_inner ">
-        <h2>Profit Loss</h2>
+        <h2>Profit Loss Report</h2>
       </div>
       <div className="flex ">
         <div className="profit_sub_head mt-5 flex flex-col">

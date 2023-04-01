@@ -5,7 +5,7 @@ const ProfitLoss = () => {
     <div>
       <div className="profit_loss">
         <div className="profit_loss_inner  mt-1 mx-1 p-2 bg-[#0f2462] ">
-          <h2 className="text-white text-2xl"> Profit Loss</h2>
+          <h2 className="text-white text-2xl"> Profit Loss Reports</h2>
         </div>
         <div className="account_calendar p-2">
           <input
