@@ -1,0 +1,422 @@
+body {
+  background-color: #0289cd;;
+}
+
+.sport_side_bar {
+  background-color: #282f41 !important;
+  color: #fff;
+}
+.icon_list {
+  cursor: pointer;
+}
+.main_heor_heading {
+  top: 17%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.search_item {
+  padding: 5px 20px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #282f41;
+  background-clip: padding-box;
+  border: 1px solid #555658;
+  border-radius: 2.5rem;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.sport_book {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 200px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+  background-image: url("https://sportsbook.blob.core.windows.net/cms-svc-prod/promos/resized/4c247656-3478-43ed-b90a-6928cf90fa54.jpg");
+  background-position-x: 0%;
+}
+
+.sportbook_text {
+  right: 0px;
+  position: absolute;
+  z-index: 99;
+  left: 10px;
+  top: 70px;
+  width: 210px;
+  padding: 10px 40px;
+}
+
+/* *** matchcard css start *** */
+.match_card_innnersdie {
+  margin-left: 15px;
+  /* width: 300px; */
+  height: 250px;
+  position: relative;
+}
+.macth_cardsldier {
+  position: absolute;
+
+  top: 270px;
+}
+.market-card {
+  /* max-width: 400px; */
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 0px;
+  top: 30px;
+  /* height: 250px; */
+  /* position: absolute; */
+  background-image: linear-gradient(
+    183.86deg,
+    #464f66 6.05%,
+    #292f41 52%,
+    #292f41 97.29%
+  );
+}
+.market-card-teams-border:last-of-type {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ffffff),
+    to(rgba(255, 255, 255, 0))
+  );
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.market-card-teams-border:first-of-type {
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#ffffff),
+    to(rgba(255, 255, 255, 0))
+  );
+  background-image: linear-gradient(
+    to left,
+    #ffffff,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.market-card-teams-border {
+  height: 2px;
+  opacity: 0.12;
+  border-radius: 1px;
+}
+.market-card-teams-border {
+  height: 2px;
+  opacity: 0.12;
+  border-radius: 1px;
+}
+.market-card-teams-name-wr {
+  width: 47%;
+}
+.market-card-teams-border {
+  height: 2px;
+  opacity: 0.12;
+  border-radius: 1px;
+}
+.flex-fill {
+  -webkit-box-flex: 1 !important;
+  -ms-flex: 1 1 auto !important;
+  flex: 1 1 auto !important;
+}
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.caption {
+  letter-spacing: 0;
+  line-height: 1.333;
+  font-size: 0.75rem;
+}
+.text-extra-3 {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.market-card-odds-wrapper {
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 1rem;
+}
+.market-card-odds-item .market-name {
+  width: 100%;
+}
+.market-card-odds-item .market-name::after {
+  content: "";
+  height: 100%;
+  width: 25px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(14.38%, rgba(40, 47, 65, 0)),
+    color-stop(42.97%, rgba(40, 47, 65, 0.76)),
+    color-stop(83.28%, #282f41)
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(40, 47, 65, 0) 14.38%,
+    rgba(40, 47, 65, 0.76) 42.97%,
+    #282f41 83.28%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.market-card-odds-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4px;
+}
+.odd {
+  width: 100px;
+  height: 44px;
+  background-color: #3a445c;
+  position: relative;
+  border-radius: 0.5rem;
+}
+.odd::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  opacity: 0;
+  background: transparent;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.text-small {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.43;
+}
+.akak {
+  padding: 5px 20px;
+  max-width: 150px;
+}
+/* *** matchcard css  end*** */
+
+/* *** betslip css  start*** */
+.rightside_betslip {
+  border-radius: 15px;
+  min-height: 350px;
+  max-height: 400px;
+  background-color: #282f41 !important;
+}
+.right_title {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #485471;
+  color: #fff;
+  font-weight: 600;
+}
+.bid_part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+/* *** betslip css  end*** */
+/* *** inplay css  start*** */
+.MiddleBook {
+  background: #181f2f;
+  width: 100%;
+}
+.casino_items {
+  height: 5rem;
+}
+.casino_category {
+  border-radius: 20px;
+  padding: 5px 0px;
+  height: 45px;
+  background-color: #353d52;
+}
+.selec_items {
+  background-color: #353d52;
+}
+.searchbar {
+  width: 150px;
+
+  min-height: 40px;
+  background-color: #353d52;
+  border: 1px solid #353d52;
+  border-radius: 44px;
+  font-size: 13px;
+  line-height: 21px;
+  color: #fff;
+  outline: none;
+}
+.searchbar > input {
+  max-width: 100px;
+  width: 100%;
+  background-color: transparent;
+}
+/* *** inplay css  end*** */
+/* * play casino css  start*** */
+
+.game-card {
+  /* margin-left: 30px; */
+  margin-top: 10px;
+}
+.game-card-image-details {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.image-game-card:hover {
+  background-color: rgb(0 0 0 / 85%);
+  /* opacity: 0.4; */
+}
+.game-card-image-details:hover {
+  background-color: rgb(0 0 0 / 85%);
+  opacity: 1;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.shadow-left-right {
+  box-shadow: inset 20px 0 10px -6px #3a445c, inset -20px 0 10px -6px #3a445c;
+}
+.icon_element {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.main_icon_event {
+  padding: 0px 30px;
+}
+.parent:hover .child {
+  display: block;
+}
+.market-card-logo {
+  width: 50px;
+}
+
+/* ****  silk carousel start***  */
+.slick-prev {
+  z-index: 999;
+  left: 10px !important;
+}
+.slick-next {
+  right: 5px !important;
+}
+/* ****  silk carousel end***  */
+/* * play casino css  end*** */
+/* *** media query all  css  satrt*** */
+@media only screen and (max-width: 1024px) {
+  .betslip_content {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .PlayingCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .betslip_content {
+    display: none;
+  }
+  .sport_side_bar {
+    display: none;
+  }
+  .sport_main_section {
+    height: 100vh;
+  }
+  .book_carousel {
+    width: 100%;
+  }
+  .main_heor_heading {
+    top: 26%;
+    z-index: 19;
+  }
+  .market-card {
+    max-width: 100%;
+    border-radius: 15px;
+    padding: 15px 50px;
+  }
+  .match_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .match_card_innnersdie {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .PlayingCards {
+    margin-top: 70px;
+  }
+  .casino_items {
+    width: 100%;
+    overflow-x: scroll;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .casino_games_header {
+    margin-top: 40px;
+  }
+  .hide_icons {
+    display: none;
+  }
+  .main_icon_event {
+    display: block;
+  }
+  .icon_element {
+    padding: 0px 20px;
+    display: flex;
+    width: 200%;
+    justify-content: space-between;
+  }
+  .searchbar {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  .searchbar > input::placeholder {
+    font: 20px/3 sans-serif;
+  }
+}
+
+/* *** media query all  css  end*** */

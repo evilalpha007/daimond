@@ -1,0 +1,560 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #232939;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* overriding swiper css */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: auto !important;
+  margin-left: 10px;
+  display: none;
+}
+
+.game-card {
+  background-color: #1d222f;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.carousel_img {
+  margin-left: 20px;
+  border-radius: 30px;
+  padding-bottom: 20%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+  background-image: url("https://cdn.bttmedia.com/images/game/5e3301a0d0e9f_27-wins-_th_360x260.jpg");
+}
+.game-card__buttons {
+  opacity: 0;
+  display: flex;
+  top: 20px;
+
+  flex-direction: column;
+  justify-content: center;
+  right: 0px;
+  left: 0px;
+  position: relative;
+  align-items: center;
+}
+.game-card__buttons:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.1s ease-in;
+}
+
+.btn-round {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+.btn-play {
+  color: #fff;
+  background: linear-gradient(90deg, #ffc700, #ffea21), #ff9e2c;
+  border-color: linear-gradient(90deg, #ffc700, #ffea21), #ff9e2c;
+  padding: 0;
+}
+.btn__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-card__name {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.3;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #fff;
+}
+.btn-demo {
+  border: none;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 44px;
+  background-color: rgba(225, 243, 247, 0.4);
+  transition: background-color 0.3s;
+}
+.my_carouesl {
+  /* width: 286.2px !important; */
+  margin-right: 10px !important;
+}
+.catogory {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.sub_catogory {
+  display: flex;
+  justify-content: space-between;
+}
+.leftpart {
+  display: flex;
+}
+
+.subcard_slider {
+  /* margin-left: 20px; */
+  border-radius: 30px;
+  height: 200px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+  background-image: url("https://cdn.bttmedia.com/images/banner/6348101a1af29_sport_nav.jpeg");
+  background-position: center center;
+}
+.swiper_class {
+  margin-right: 1px !important;
+}
+
+.disabled_swiper_button {
+  display: none !important;
+}
+.subcard_text {
+  right: 0px;
+  position: absolute;
+  z-index: 99;
+  left: -20px;
+  top: 45px;
+  width: 210px;
+  padding: 10px 40px;
+}
+
+.subCard_btn {
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #fff;
+  background: #1d222f;
+  min-width: 108px;
+}
+.mob_footer {
+  z-index: 9999;
+  left: 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  background: rgb(35 33 45);
+  /* background: red; */
+  position: fixed;
+  bottom: 0;
+  font-size: 13px;
+  width: 100%;
+  display: none;
+}
+
+.carousel_img_editotor {
+  background-image: url("https://cdn.bttmedia.com/images/game/638a02f01429d_HINDIRouletteTH.jpg");
+}
+.blue_backImg {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 255px);
+  padding: 0 60px;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin: 30px 0;
+  height: 375px;
+  min-height: unset;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://www.bettilt109.com/static/media/loyalty-bg-empty.d52c069d.jpg");
+}
+
+.payment_img {
+  background: #434e6a;
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+.payment_img:hover {
+  cursor: pointer;
+  border-top: 3px solid #ffc700;
+}
+
+/* --------- login part start---  */
+.login_container {
+  height: 100vh;
+  flex-direction: column;
+}
+.cross_section {
+  cursor: pointer;
+  background: #505970;
+  color: white;
+  font-size: 35px;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+  position: absolute;
+  right: 10px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #3ccc87;
+}
+
+.login_content {
+  width: 450px;
+  padding: 30px 30px;
+  border-radius: 17px;
+  background: linear-gradient(136.18deg, #292f41 28.25%, #464f66 98.65%);
+  word-break: break-word;
+}
+.username {
+  padding: 23.4px 0 7.6px 16px;
+  background: #505970;
+  flex-grow: 1;
+  color: #b9c5e1;
+  width: 100%;
+  border: none;
+  height: 100%;
+  transition: 0.25s;
+  border-radius: 8px 8px 0 0;
+}
+/* --------- login part end ---  */
+.mobCartBetSlip {
+  display: none;
+}
+
+
+
+
+
+.suspend:after {
+ 
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-family: "Font Awesome 5 Free";
+  content: "\f023";
+  font-weight: 900;
+  font-size: 18px;
+  top: 0;
+}
+
+.content {
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  /* height: 100%; */
+}
+
+.content.slideDiv {
+  /* height: 200px;
+  width: 100%; */
+  margin-bottom: 20rem;
+  /* transform: translateY(300px); */
+}
+
+.margin_bottom_slide{
+  margin-top: 15rem;
+}
+
+.newImg_headerMob{
+  display: none;
+}
+.event_page{
+  margin:0px;
+}
+/* **** media query ***  ---------------- */
+
+body{
+  font-size: 12px;
+  /* user-select: none; */
+  /* user-zoom: ; */
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+.mobile_width{
+  width: 200vw;
+  /* height: 200vh; */
+}
+
+
+  .profit_loss{
+    margin-top:3rem;
+  }
+  .accountVerification{
+    
+    margin-top:3rem;
+  }
+  .profit_loss_inner {
+    
+    margin-top:3rem;
+
+  }
+  .newImg_headerMob{
+    display: block;
+    position: absolute;
+    top: 22%;
+  }
+
+  .hide_part_betslip {
+    display: none !important;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .EventMatch {
+    margin-top: 2.56rem;
+  }
+  .margin_top_side {
+    margin-top: 1.56rem;
+  }
+  .mobie_sidebar {
+    position: relative;
+    top: 37px;
+  }
+  .mobCartBetSlip{
+    display: block;
+  }
+  .minimum_width {
+    width: auto;
+    min-width: 90px;
+  }
+  .margin_left {
+    margin-left: 45px;
+  }
+  /* .table_header_details {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  } */
+  .event_page {
+    width: 100%;
+  }
+  .font_size_small {
+    font-size: 12px;
+  }
+  .pulsebanner {
+    overflow:scroll;
+    white-space: nowrap;
+    position: absolute;
+    top: 80px;
+    font-size: 10px;
+    max-width: 400px;
+    height: 50px;
+    align-items: center;
+  }
+  .hide_part {
+    display: none;
+  }
+  .mob_footer {
+    display: flex;
+  }
+  .blue_backImg {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .mobile_btn {
+    display: none;
+  }
+  .list_itmes {
+    display: none;
+  }
+  .subcard_slider {
+    width: 150px;
+  }
+  .material-symbols-rounded {
+    /* display: block; */
+  }
+  .blue_text > h2 {
+    font-size: 35px;
+  }
+  .s_ul_part {
+    display: grid;
+    max-height: 100%;
+    column-count: 0 !important;
+  }
+  .cross_section {
+    height: 50px;
+    width: 50px;
+    top: 120px;
+    z-index: 10;
+    right: 10px;
+  }
+  .login_content {
+    width: 380px;
+    padding: 30px 0px;
+  }
+  .match_table_name {
+    width: 100%;
+  }
+  .match_table_name > h2 {
+    font-size: 17px;
+  }
+  .match_points {
+    width: 100%;
+  }
+  .match_table {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .match_points {
+    user-select: none;
+    /* user-zoom: fixed; */
+  }
+}
+
+/* / praditya css/ */
+
+
+@media screen and (max-width: 450px) {
+  .newImg_headerMob {
+    top: 26% ;
+
+  }
+}
+@media screen and (max-width: 450px) {
+  .newImg_headerMob {
+    top: 22% ;
+
+  }
+
+.event_page{
+  /* margin-top: 1rem; */
+}
+
+}
+
+  
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.shadow-left-right {
+  box-shadow: inset 20px 0 10px -6px #3a445c, inset -20px 0 10px -6px #3a445c;
+}
+
+.parent {
+}
+.parent:hover .child {
+  display: block;
+}
+
+.sub_card {
+}
+.sub_card:hover .btn {
+  color: #232939;
+  background: linear-gradient(90deg, #ffc700, #ffea21), #ff9e2c;
+  border-color: linear-gradient(90deg, #ffc700, #ffea21), #ff9e2c;
+}
+
+.games_card {
+}
+
+.games_card:hover .games_card_image {
+  scale: 1.1;
+  filter: blur(4px);
+  transition: 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.games_card:hover .game_card_hidden_content {
+  opacity: 100;
+}
+.games_card:hover .game_card_hidden_content_bottom {
+  background-color: #363d52;
+}
+
+.games_hover_btn {
+  background: linear-gradient(90deg, #ffc700, #ffea21), #ff9e2c;
+  cursor: pointer;
+}
+.games_hover_btn:hover {
+  background: radial-gradient(circle, #ffea21 0, #ffc700 100%), #ff9e2c;
+  border-color: transparent;
+}
+
+.game_card_hover_btn {
+  border: none;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 44px;
+  background-color: rgba(225, 243, 247, 0.4);
+  transition: background-color 0.3s;
+  font-weight: 400;
+}
+
+.card_Games .swiper-slide {
+  width: min-content !important;
+}
+
+.payment_carousel_card:hover {
+  background: linear-gradient(#ffd60e, rgba(181, 193, 221, 0.35));
+}
+
+.payment_carousel_card_img {
+  width: 100%;
+  max-width: unset;
+  height: 80px;
+  padding: 25px;
+  background: #353d52;
+  border-radius: 17px;
+  object-fit: contain;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+

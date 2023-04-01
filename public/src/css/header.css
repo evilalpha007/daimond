@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 72px;
+  box-shadow: 0 12px 28px rgb(28 51 56 / 4%);
+  background: linear-gradient(0deg, #1d2230, #1d2230);
+}
+
+.item:hover:after {
+  content: "";
+  height: 3px;
+  border-radius: 5px;
+  width: 80%;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: auto;
+}
+
+.mobile_btn:hover::after {
+  content: "Mobile App";
+  margin-left: 5px;
+  transition: all;
+}
+
+.btn-primary {
+  color: #232939;
+  background: linear-gradient(90deg, #ffc700, #ffea21), #ff9e2c;
+}
+
+.btn-action:hover,
+.btn-primary:hover {
+  background: #ffe669;
+  border-color: #ffe669;
+}
+

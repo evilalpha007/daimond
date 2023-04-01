@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,500&family=Roboto:wght@300&display=swap");
+.accordion-header {
+  background-color: #0289cd;
+  padding: 5px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", serif;
+}
+.accordion-body {
+  padding: 5px 0px;
+  /* padding: 5px 10px; */
+}
+.accordion-list {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #9e9e9e;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0.3rem 1rem;
+}
+
