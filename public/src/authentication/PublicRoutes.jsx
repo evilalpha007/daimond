@@ -13,13 +13,17 @@ import Blackjack from "./../screens/publicScreens/casino/Blackjack";
 import Roulete from "./../screens/publicScreens/casino/Roulete";
 import ProtectedRoute from "./ProtectedRoute";
 import { useSelector } from "react-redux";
+import AdminLoginScreen from "../screens/adminScreens/AdminLoginScreen";
+import DaimondLogin from "../components/publicComponents/DaimondLogin";
 
 export default function PublicRoutes() {
   const { hidePublicRoutes } = useSelector((state) => state?.auth);
+  console.log(hidePublicRoutes);
   return (
     <Routes>
       <Route element={<ProtectedRoute hidePublic={hidePublicRoutes} />}>
-        <Route path="/" element={<HomeScreen />} />
+        <Route path="/" element={<DaimondLogin />} />
+        {/*<Route path="/" element={<HomeScreen />} />
         <Route path="/bonuses" element={<BonusesScreen />} />
         <Route path="/InPlayScreen" element={<InPlayScreen />} />
         <Route path="/sports-book" element={<SportsBookScreen />} />
@@ -29,7 +33,7 @@ export default function PublicRoutes() {
         <Route path="/blackjack" element={<Blackjack />} />
         <Route path="/roulete" element={<Roulete />} />
         <Route path="/casino/live-casino" element={<LiveCasinoScreen />} />
-        <Route path="/slots" element={<SlotsScreen />} />
+  <Route path="/slots" element={<SlotsScreen />} /> */}
       </Route>
     </Routes>
   );
